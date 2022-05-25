@@ -1,0 +1,25 @@
+==19902== Memcheck, a memory error detector
+==19902== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19902== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19902== Command: ../cub3D ./maps/test_MAP25.cub
+==19902== Parent PID: 19398
+==19902== 
+==19902== Conditional jump or move depends on uninitialised value(s)
+==19902==    at 0x1107AA: all_free (exit_process.c:17)
+==19902==    by 0x11089C: error (exit_process.c:7)
+==19902==    by 0x111D1D: map_wrong_process (check_map.c:8)
+==19902==    by 0x111D1D: map_line_check (check_map.c:31)
+==19902==    by 0x110677: build_map (build_map.c:69)
+==19902==    by 0x10FD15: read_cub_line (main.c:52)
+==19902==    by 0x10F8CF: main (main.c:63)
+==19902== 
+==19902== 
+==19902== HEAP SUMMARY:
+==19902==     in use at exit: 0 bytes in 0 blocks
+==19902==   total heap usage: 171 allocs, 171 frees, 93,807 bytes allocated
+==19902== 
+==19902== All heap blocks were freed -- no leaks are possible
+==19902== 
+==19902== Use --track-origins=yes to see where uninitialised values come from
+==19902== For lists of detected and suppressed errors, rerun with: -s
+==19902== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

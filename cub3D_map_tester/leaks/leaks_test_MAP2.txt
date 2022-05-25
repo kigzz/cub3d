@@ -1,0 +1,22 @@
+==19648== Memcheck, a memory error detector
+==19648== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19648== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19648== Command: ../cub3D ./maps/test_MAP2.cub
+==19648== Parent PID: 19398
+==19648== 
+==19648== Conditional jump or move depends on uninitialised value(s)
+==19648==    at 0x1107AA: all_free (exit_process.c:17)
+==19648==    by 0x11089C: error (exit_process.c:7)
+==19648==    by 0x1102D6: init (init_game.c:115)
+==19648==    by 0x10F8D7: main (main.c:64)
+==19648== 
+==19648== 
+==19648== HEAP SUMMARY:
+==19648==     in use at exit: 0 bytes in 0 blocks
+==19648==   total heap usage: 408 allocs, 408 frees, 102,492 bytes allocated
+==19648== 
+==19648== All heap blocks were freed -- no leaks are possible
+==19648== 
+==19648== Use --track-origins=yes to see where uninitialised values come from
+==19648== For lists of detected and suppressed errors, rerun with: -s
+==19648== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

@@ -1,0 +1,5 @@
+cub3d
+CMakeLists.txt
+cmake-build-debug
+.idea
+*.o
