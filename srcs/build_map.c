@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/cub3d.h"
+#include "../includes/cub3D.h"
 
 void	build_map3(t_game *g, char **tmp, char *map_line)
 {

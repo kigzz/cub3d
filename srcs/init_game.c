@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/cub3d.h"
+#include "../includes/cub3D.h"
 
 void	init_dir_plane(t_game *g, double x, double y, int type)
 {
