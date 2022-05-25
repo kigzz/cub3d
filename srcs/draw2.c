@@ -37,6 +37,7 @@ void	draw_img(t_game *g, int x, int tex_x)
 	int	color;
 	int	y;
 
+	y = 0;
 	while (y < g->draw_start)
 		g->buf[y++][x] = g->cub_list.ceiling_dec;
 	y = draw_img2(g, x, y);

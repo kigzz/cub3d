@@ -7,7 +7,7 @@
 ==19935== Conditional jump or move depends on uninitialised value(s)
 ==19935==    at 0x1107AA: all_free (exit_process.c:17)
 ==19935==    by 0x11089C: error (exit_process.c:7)
-==19935==    by 0x11207D: map_space_check (check_map.c:130)
+==19935==    by 0x11207D: check_map_spaces (check_map.c:130)
 ==19935==    by 0x1102BE: init (init_game.c:113)
 ==19935==    by 0x10F8D7: main (main.c:64)
 ==19935== 

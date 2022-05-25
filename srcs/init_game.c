@@ -123,7 +123,7 @@ int	init(t_game *g)
 		map_edge_check(g, &i);
 	}
 	map_wall_check(g);
-	map_space_check(g);
+	check_map_spaces(g);
 	if (g->cub_list.init_pos_count != 1)
 		error(g, "Map is wrong");
 	return (0);

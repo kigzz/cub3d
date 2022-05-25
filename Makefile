@@ -3,7 +3,7 @@
 
 NAME			=	cub3D
 CC				=	gcc
-FLAGS			=	-Wall -Wextra -Iincludes -Ilibft -Iminilibx-linux -O3 -g3 #-fsanitize=address
+FLAGS			=	-Wall -Werror -Wextra -Iincludes -Ilibft -Iminilibx-linux -O3 -g3 #-fsanitize=address
 
 RM				=	rm -rf
 
@@ -24,8 +24,9 @@ LIBFT_FLAGS		=	-Llibft -lft
 
 #FILES AND PATH
 
-SRCS    		=	main.c init_game.c build_map.c exit_process.c init_process.c player.c draw.c draw2.c \
-					key_status.c check_map.c decide_textures.c load_textures.c
+SRCS    		=	main.c init_game.c build_map.c exit_process.c init_process.c player.c draw.c draw2.c	\
+					key_status.c decide_textures.c load_textures.c utils.c check_map_spaces.c check_rgb.c	\
+					check_map_edges.c check_map.c check_map2.c
 SRCS_DIR		=	srcs/
 SRCS_PATH		=	$(addprefix $(SRCS_DIR), $(SRCS))
 OBJ_SRCS    	=	$(SRCS_PATH:%.c=%.o)

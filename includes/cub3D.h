@@ -144,7 +144,7 @@ void	error(t_game *g, char *error);
 void	argv_check(int argc, char **argv, char **envp, t_game *g);
 void	map_edge_check(t_game *g, int *i);
 void	map_wall_check(t_game *g);
-void	map_space_check(t_game *g);
+void	check_map_spaces(t_game *g);
 void	map_line_check(t_game *g, char **line_split, char *line);
 int		floor_check(t_game *g, char **l_split, char **rgb_split, char *line);
 int		ceiling_check(t_game *g, char **l_split, char **rgb_split, char *line);
@@ -164,5 +164,6 @@ int		keydown(int k, t_game *g);
 int		keyup(int k, t_game *g);
 void	check_key_status(t_game *g);
 int		size_array_char(char **str);
+int		create_trgb(t_rgb c);
 
 #endif
